@@ -13,6 +13,5 @@ import lombok.Setter;
 public class SavingsInstrument extends Instrument {
     @Id
     private Long id;
-
 }
 
