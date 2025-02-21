@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {RouterLink, RouterOutlet} from '@angular/router';
+import {MatToolbar} from '@angular/material/toolbar';
+import {MatAnchor} from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [
+    RouterOutlet,
+    MatToolbar,
+    RouterLink,
+    MatAnchor
+  ],
+  standalone: true
 })
 export class AppComponent {
-  title = 'frontend-myfinances';
 }
